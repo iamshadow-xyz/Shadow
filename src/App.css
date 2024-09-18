@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+body {
+  background-color: #101010;
+  color: #f0f0f0;
+  font-family: 'Bai Jamjuree', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #FF6B6B;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: #f0f0f0;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #FF6B6B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+button:hover {
+  background-color: #FF5252;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #1e1e1e;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+li span {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+li button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+/* Custom checkbox styling */
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  height: 20px;
+  width: 20px;
+  background-color: #2a2a2a;
+  border: 2px solid #444;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #3a3a3a;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #FF6B6B;
+  border-color: #FF6B6B;
+}
+
+.checkmark:after {
+  content: "";
+  display: none;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
