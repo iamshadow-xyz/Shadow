@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Simple Todo App</h1>
+      <h1>Hello, Shadow!</h1>
       <div>
         <input
           type="text"
@@ -64,7 +64,7 @@ function App() {
           onKeyPress={handleKeyPress}
           placeholder="Enter a new todo"
         />
-        <button onClick={addTodo}>{editIndex === -1 ? 'Add Todo' : 'Update Todo'}</button>
+        <button onClick={addTodo}>{editIndex === -1 ? 'Add' : 'Update'}</button>
       </div>
       <ul>
         {todos.map((todo, index) => (
